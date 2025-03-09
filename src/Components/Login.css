@@ -1,0 +1,135 @@
+/* ---- Global Styles ---- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  
+  .background-video1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+  
+  }
+  
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+
+  .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .login-box h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700; 
+    font-size: 28px; 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 15px;
+  }
+  
+  .login-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .login-box input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+  
+
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #183594, #5a0d72);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .login-box button:hover {
+    background: linear-gradient(90deg, #0e1eb3, #117029);
+    transform: scale(1.05);
+  }
+  
+
+  .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+
+  .login-box a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .login-box a:hover {
+    text-decoration: underline;
+    color: #8e75ff;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  @media (max-width: 400px) {
+    .login-box {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

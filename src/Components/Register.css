@@ -1,0 +1,115 @@
+/* Register Page Styling */
+.register-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  
+  /* Background Video */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  
+  /* Register Box */
+  .register-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    color: white;
+  }
+  
+ .login-box h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700; /* Makes the text bold */
+  font-size: 28px; /* Increases text size */
+  text-transform: uppercase; /* Optional: Makes text uppercase */
+  letter-spacing: 1.5px; /* Adds spacing for a stylish look */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
+}
+.login-box h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700; /* Makes the text bold */
+    font-size: 28px; /* Increases text size */
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    letter-spacing: 1.5px; /* Adds spacing for a stylish look */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
+  }
+  
+  
+  .register-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Placeholder Styling */
+  .register-box input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Submit Button */
+  .register-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #193b99, #127c3b);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .register-box button:hover {
+    background: linear-gradient(45deg, #a1615c, #201cff);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  .register-box p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .register-box a {
+    color: #FFAC1C;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-box a:hover {
+    text-decoration: underline;
+  }
+  
